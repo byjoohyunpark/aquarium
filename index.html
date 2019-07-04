@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Synthetic Ocean</title>
+    <meta name="author" content="Joohyun Park">
+    <link rel="shortcut icon" href="script/img/favicon.png">
+    <link rel="apple-touch-icon" href="script/img/favicon.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
+    <link rel="stylesheet/less" type="text/css" href="script/style.less" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.7.1/less.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+    <audio id="ocean" preload="auto" autoplay loop>
+  <source src="sound/ocean.mp3" type="audio/mpeg">
+</audio>
+
+    <p id="title">SYNTHETIC OCEAN</p>
+
+    <div class="info">
+        <p>
+            <br>Welcome to Synthetic Ocean.
+            <br>Explore the world of virtual whales and dolphins.
+            <br>This project invites you to the– 
+            <br>immersive sound environment on web,
+            <br>using spatial audio rendering system,
+            <br>with Google's <a href="https://github.com/GoogleChrome/omnitone">Omnitone</a>.
+            <br><br><br><br> &#8592; Your position is a center of this browser.
+            <br><br><br><br>Click anywhere to start.
+            <br><i> * Best experienced over headphones.</i>
+            <br><br><br><br><br><br>
+        </p>
+    </div>
+
+    <p id="author">by <a href="https://www.parkjoohyun.com/" target="_blank">Joohyun Park</a></p>
+
+    <img id="point" src="script/img/point.png" width="28" alt="">
+    <img id="refresh" src="script/img/refresh.png" alt="">
+
+
+    <script src="script/js/script.js"></script>
+    <script src="build/resonance-audio.min.js"></script>
+    <script src="script/js/omnitone.js"></script>
+
+
+</body>
+
+</html>
