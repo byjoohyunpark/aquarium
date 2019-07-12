@@ -6,7 +6,7 @@ let r = 0;
 let g = 0;
 let b = 255;
 let canvas;
-let max = 70;
+let max = 50;
 
 
 function setup() {

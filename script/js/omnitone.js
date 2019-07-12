@@ -132,4 +132,5 @@ let ocean = document.querySelector("#ocean");
 document.body.onclick = () =>{
     ocean.play();
     $( ".info" ).fadeOut(2000);
+    $( ".pos" ).fadeOut(2000);    
 }
