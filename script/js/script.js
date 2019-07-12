@@ -7,7 +7,9 @@ let g = 0;
 let b = 255;
 let canvas;
 let max = 50;
-
+let randomR = 255;
+let randomG = 255;
+let randomB = 255;
 
 function setup() {
     canvas = createCanvas(windowWidth, windowHeight);
@@ -18,12 +20,18 @@ function setup() {
 function draw() {
     background(r, g, b);
     gradient();
-    console.log(flock.boids.length)
     flock.run();
     update();
 }
 
+function keyPressed() {
+    if (keyIsDown(32)) {
+        randomR = random(255);
+        randomG = random(255); 
+        randomB = random(255);        
+    }
 
+}
 
 function mouseClicked(e) {
     if (e.path[0].id == 'refresh') {
@@ -116,8 +124,10 @@ Boid.prototype.seek = function (target) {
 Boid.prototype.render = function () {
     // Draw a triangle rotated in the direction of velocity
     var theta = this.velocity.heading() + radians(90);
-    fill(255);
-    stroke(200);
+    //    fill(randomColor);
+    //    stroke(200);
+    fill(randomR, randomG, randomB);
+    stroke(randomR, randomG, randomB);
     push();
     translate(this.position.x, this.position.y);
     rotate(theta);
