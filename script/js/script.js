@@ -6,6 +6,7 @@ let r = 0;
 let g = 0;
 let b = 255;
 let canvas;
+let max = 70;
 
 
 function setup() {
@@ -17,20 +18,22 @@ function setup() {
 function draw() {
     background(r, g, b);
     gradient();
-
+    console.log(flock.boids.length)
     flock.run();
     update();
 }
 
 
 
-function mouseClicked(e) {    
+function mouseClicked(e) {
     if (e.path[0].id == 'refresh') {
         refresh();
     } else {
-        flock.addBoid(new Boid(mouseX, mouseY));
-        addAudio();
-        play();
+        if (flock.boids.length < max) {
+            flock.addBoid(new Boid(mouseX, mouseY));
+            addAudio();
+            play();
+        }
     }
 }
 

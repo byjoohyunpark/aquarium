@@ -7,7 +7,7 @@
 body,
 html {
     margin: 0;
-    padding : 0;
+    padding: 0;
     overflow: hidden;
     color: white;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -23,11 +23,21 @@ html {
     font-size: 12px;
 }
 
-.info{
-    position :absolute;
+.info {
+    position: absolute;
     left: 64%;
-    top : 50%;
-    transform: translate(0, -50%);    
+    top: 50%;
+    transform: translate(0, -50%);
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 1.8em;
+}
+
+.pos {
+    position: absolute;
+    right: 64%;
+    top: 50%;
+    transform: translate(0, -50%);
     letter-spacing: 2px;
     font-size: 16px;
     line-height: 1.8em;
@@ -59,18 +69,18 @@ html {
 a:link,
 a:visited {
     text-decoration: none;
-    color : white;
+    color: white;
 }
 
-#author{
+#author {
     font-size: 10px;
     letter-spacing: 2px;
     position: absolute;
-    bottom : @indicator-margin; 
-    width : 100%;
+    bottom: @indicator-margin;
+    width: 100%;
     text-align: center;
 }
 
-i{
+i {
     font-size: 14px;
 }
