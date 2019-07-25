@@ -135,3 +135,5 @@ document.body.onclick = () =>{
     $( ".pos" ).fadeOut(2000);    
     $( ".click" ).fadeOut(2000);        
 }
+
+
