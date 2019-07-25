@@ -31,6 +31,7 @@ html {
     letter-spacing: 2px;
     font-size: 16px;
     line-height: 1.8em;
+    padding: 0 16px;
 }
 
 .pos {
@@ -41,6 +42,21 @@ html {
     letter-spacing: 2px;
     font-size: 16px;
     line-height: 1.8em;
+    padding: 0 16px;
+}
+
+.control {
+    position: absolute;
+    bottom: 16%;
+    width: 100%;
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 1.8em;
+    text-align: center;
+}
+
+.control span {
+    padding: 24px;
 }
 
 #point {
@@ -83,4 +99,14 @@ a:visited {
 
 i {
     font-size: 14px;
+}
+
+
+@media only screen and (max-height: 780px),
+screen and (max-width: 600px) {
+    .info,
+    .pos,
+    .control {
+        display: none;
+    }
 }

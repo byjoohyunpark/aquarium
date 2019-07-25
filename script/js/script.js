@@ -26,9 +26,10 @@ function draw() {
 
 function keyPressed() {
     if (keyIsDown(32)) {
+        $(".space").fadeOut(2000);
         randomR = random(255);
-        randomG = random(255); 
-        randomB = random(255);        
+        randomG = random(255);
+        randomB = random(255);
     }
 
 }

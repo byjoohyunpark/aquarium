@@ -133,4 +133,5 @@ document.body.onclick = () =>{
     ocean.play();
     $( ".info" ).fadeOut(2000);
     $( ".pos" ).fadeOut(2000);    
+    $( ".click" ).fadeOut(2000);        
 }
