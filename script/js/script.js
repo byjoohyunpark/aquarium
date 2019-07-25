@@ -6,10 +6,10 @@ let r = 0;
 let g = 0;
 let b = 255;
 let canvas;
-let max = 50;
 let randomR = 255;
 let randomG = 255;
 let randomB = 255;
+let max = 50;
 
 function setup() {
     canvas = createCanvas(windowWidth, windowHeight);
